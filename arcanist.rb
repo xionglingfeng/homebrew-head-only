@@ -2,10 +2,10 @@ require "formula"
 
 class Arcanist < Formula
   homepage "http://phabricator.org/"
-  head "https://github.com/facebook/arcanist.git"
+  head "https://github.com/phacility/arcanist.git"
 
   resource "libphutil" do
-    url "https://github.com/facebook/libphutil.git"
+    url "https://github.com/phacility/libphutil.git"
   end
 
   def install
