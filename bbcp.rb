@@ -1,6 +1,6 @@
 class Bbcp < Formula
-  homepage "http://www.slac.stanford.edu/%7Eabh/bbcp"
-  head "http://www.slac.stanford.edu/~abh/bbcp/bbcp.git"
+  homepage "https://www.slac.stanford.edu/%7Eabh/bbcp"
+  head "https://www.slac.stanford.edu/~abh/bbcp/bbcp.git"
 
   depends_on "openssl"
 
