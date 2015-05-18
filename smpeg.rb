@@ -1,31 +1,23 @@
-require 'formula'
-
 class Smpeg < Formula
-  homepage 'http://icculus.org/smpeg/'
-  # current HEAD only works with SDL 2, which has no stable release
-  # This is all really a mess and why we removed it from core!
-  # When SDL 2 comes out, move this back to HEAD
-  # Or, if the author tags a stable release, use that
-  head 'svn://svn.icculus.org/smpeg/trunk', :revision => '398'
+  homepage "http://icculus.org/smpeg/"
+  head "svn://svn.icculus.org/smpeg/trunk"
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "libtool" => :build
-  depends_on 'pkg-config' => :build
-  depends_on 'sdl'
-  depends_on 'gtk+'
+  depends_on "pkg-config" => :build
+  depends_on "sdl2"
+  depends_on "gtk+"
 
   def install
-    sdl = Formula["sdl"]
     system "./autogen.sh"
     system "./configure", "--disable-debug", "--disable-dependency-tracking",
                           "--prefix=#{prefix}",
                           "--disable-sdltest",
                           # For non-/usr/local installs
-                          "--with-sdl-prefix=#{sdl.opt_prefix}"
-    system "make"
+                          "--with-sdl-prefix=#{Formula["sdl2"].opt_prefix}"
     # Install script is not +x by default for some reason
-    system "chmod +x ./install-sh"
-    system "make install"
+    chmod 0755, "./install-sh"
+    system "make", "install"
   end
 end
