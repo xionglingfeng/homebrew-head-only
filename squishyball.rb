@@ -1,4 +1,5 @@
 class Squishyball < Formula
+  desc "CLI utility for performing double-blind testing"
   homepage "https://xiph.org/"
   head "http://svn.xiph.org/trunk/squishyball"
 
