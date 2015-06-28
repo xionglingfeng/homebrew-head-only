@@ -16,6 +16,7 @@ class Vcontrold < Formula
 
     system "make", "install"
   end
+
   test do
     assert_match /usage/, shell_output("#{sbin}/vcontrold --help", 1)
     assert_match /usage/, shell_output("#{bin}/vclient --help", 1)
