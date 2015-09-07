@@ -1,11 +1,8 @@
-require 'formula'
-
 class F2c < Formula
-  homepage 'http://www.netlib.org/f2c/'
-  head 'http://netlib.sandia.gov/cgi-bin/netlib/netlibfiles.tar?filename=netlib/f2c'
+  homepage "http://www.netlib.org/f2c/"
+  head "http://netlib.sandia.gov/cgi-bin/netlib/netlibfiles.tar?filename=netlib/f2c"
 
   def install
-
     system "unzip", "libf2c.zip", "-d", "libf2c"
     # f2c header and libf2c.a
     cd "libf2c" do

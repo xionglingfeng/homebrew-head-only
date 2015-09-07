@@ -1,5 +1,3 @@
-require "formula"
-
 class Arcanist < Formula
   homepage "http://phabricator.org/"
   head "https://github.com/phacility/arcanist.git"
@@ -11,7 +9,7 @@ class Arcanist < Formula
   def install
     (prefix/"libphutil").install resource("libphutil")
 
-    (prefix/"arcanist").install %w{bin externals resources scripts src}
+    (prefix/"arcanist").install %w[bin externals resources scripts src]
     bin.install_symlink prefix + "arcanist/bin/arc"
   end
 

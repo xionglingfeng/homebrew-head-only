@@ -1,5 +1,3 @@
-require "formula"
-
 class Kakoune < Formula
   homepage "https://github.com/mawww/kakoune"
   head "https://github.com/mawww/kakoune.git"

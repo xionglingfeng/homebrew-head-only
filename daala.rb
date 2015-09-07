@@ -1,5 +1,3 @@
-require "formula"
-
 class Daala < Formula
   homepage "https://xiph.org/daala/"
 
@@ -23,6 +21,6 @@ class Daala < Formula
                           "--disable-player",
                           "--disable-tools",
                           "--prefix=#{prefix}"
-    system "make install"
+    system "make", "install"
   end
 end

@@ -1,5 +1,3 @@
-require "formula"
-
 class Otx < Formula
   homepage "https://github.com/darwin/otx"
   head "https://github.com/darwin/otx.git"

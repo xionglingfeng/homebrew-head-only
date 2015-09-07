@@ -1,5 +1,3 @@
-require "formula"
-
 class Libphenom < Formula
   homepage "https://facebook.github.io/libphenom"
   head "https://github.com/facebook/libphenom.git"

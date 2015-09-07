@@ -1,8 +1,6 @@
-require 'formula'
-
 class RedisTools < Formula
-  head 'https://github.com/antirez/redis-tools.git'
-  homepage 'https://github.com/antirez/redis-tools'
+  head "https://github.com/antirez/redis-tools.git"
+  homepage "https://github.com/antirez/redis-tools"
 
   def install
     # Architecture isn't detected correctly on 32bit Snow Leopard without help

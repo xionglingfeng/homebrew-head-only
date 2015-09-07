@@ -1,5 +1,3 @@
-require "formula"
-
 class Termbox < Formula
   homepage "https://code.google.com/p/termbox/"
   head "https://github.com/nsf/termbox.git"

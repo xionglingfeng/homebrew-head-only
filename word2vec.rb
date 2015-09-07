@@ -1,5 +1,3 @@
-require "formula"
-
 class Word2vec < Formula
   homepage "https://code.google.com/p/word2vec/"
   head "http://word2vec.googlecode.com/svn/trunk/"

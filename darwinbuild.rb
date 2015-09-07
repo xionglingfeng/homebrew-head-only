@@ -1,8 +1,6 @@
-require 'formula'
-
 class Darwinbuild < Formula
-  homepage 'http://darwinbuild.macosforge.org/'
-  head 'http://svn.macosforge.org/repository/darwinbuild/trunk/'
+  homepage "http://darwinbuild.macosforge.org/"
+  head "http://svn.macosforge.org/repository/darwinbuild/trunk/"
 
   patch :DATA
 

@@ -1,5 +1,3 @@
-require "formula"
-
 class VirtualBoxInstalled < Requirement
   fatal true
 

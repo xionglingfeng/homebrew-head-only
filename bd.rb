@@ -1,5 +1,3 @@
-require "formula"
-
 class Bd < Formula
   homepage "https://github.com/vigneshwaranr/bd"
   head "https://github.com/vigneshwaranr/bd.git"

@@ -1,5 +1,3 @@
-require "formula"
-
 class Opentracker < Formula
   homepage "http://erdgeist.org/arts/software/opentracker/"
   head ":pserver:anoncvs:@cvs.erdgeist.org:/home/cvsroot", :using => :cvs
