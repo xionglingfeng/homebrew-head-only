@@ -19,6 +19,11 @@ class MozGitTools < Formula
 
   test do
     # create a Git repo and check its branchname
+    (testpath/".gitconfig").write <<-EOS.undent
+      [user]
+        name = Real Person
+        email = notacat@hotmail.cat
+      EOS
     system "git", "init"
     (testpath/"myfile").write("my file")
     system "git", "add", "myfile"
