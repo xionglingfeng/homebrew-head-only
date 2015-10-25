@@ -1,5 +1,3 @@
-require "formula"
-
 class Osmfilter < Formula
   homepage "http://wiki.openstreetmap.org/wiki/Osmfilter"
   head "http://m.m.i24.cc/osmfilter.c"

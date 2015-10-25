@@ -1,8 +1,6 @@
-require 'formula'
-
 class Bonnie < Formula
-  homepage 'http://code.google.com/p/bonnie-64/'
-  head 'http://bonnie-64.googlecode.com/svn/trunk/'
+  homepage "https://code.google.com/p/bonnie-64/"
+  head "http://bonnie-64.googlecode.com/svn/trunk/"
 
   def install
     system "make"

@@ -1,11 +1,9 @@
-require 'formula'
-
 class Libgarmin < Formula
-  head 'http://libgarmin.svn.sourceforge.net/svnroot/libgarmin/libgarmin/dev/'
-  homepage 'http://libgarmin.sourceforge.net/'
+  head "http://libgarmin.svn.sourceforge.net/svnroot/libgarmin/libgarmin/dev/"
+  homepage "http://libgarmin.sourceforge.net/"
 
   def rewrite_version
-    File.open("version.h","w") { |f| f.puts "#define LIBVERSION \"libgarmin 0.1\"" }
+    File.open("version.h", "w") { |f| f.puts "#define LIBVERSION \"libgarmin 0.1\"" }
   end
 
   def install
@@ -24,6 +22,6 @@ class Libgarmin < Formula
     rewrite_version
     system "make"
     rewrite_version
-    system "make install"
+    system "make", "install"
   end
 end

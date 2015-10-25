@@ -1,10 +1,8 @@
-require 'formula'
-
 class GerritTools < Formula
-  head 'https://github.com/indirect/gerrit-tools.git'
-  homepage 'https://github.com/indirect/gerrit-tools'
+  head "https://github.com/indirect/gerrit-tools.git"
+  homepage "https://github.com/indirect/gerrit-tools"
 
   def install
-    prefix.install 'bin'
+    prefix.install "bin"
   end
 end

@@ -1,7 +1,5 @@
-require 'formula'
-
 class HgInstalled < Requirement
-  satisfy { which 'hg' }
+  satisfy { which "hg" }
 
   def message; <<-EOS.undent
     Mercurial is required to use this software.
@@ -16,12 +14,12 @@ class HgInstalled < Requirement
 end
 
 class GitHg < Formula
-  head 'https://github.com/cosmin/git-hg.git'
-  homepage 'http://offbytwo.com/git-hg/'
+  head "https://github.com/cosmin/git-hg.git"
+  homepage "http://offbytwo.com/git-hg/"
 
   depends_on HgInstalled
 
   def install
-    prefix.install Dir['*']
+    prefix.install Dir["*"]
   end
 end
