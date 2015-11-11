@@ -9,7 +9,7 @@ class Libfreenect2 < Formula
   depends_on "pkg-config" => :build
   depends_on "libusb"
   depends_on "jpeg-turbo"
-  depends_on "glfw3"
+  depends_on "homebrew/versions/glfw3"
 
   def install
     args = std_cmake_args
