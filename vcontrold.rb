@@ -1,20 +1,22 @@
 class Vcontrold < Formula
   desc "Control and log Viessmann boilers."
   homepage "https://openv.wikispaces.com/vcontrold"
-  head "http://svn.code.sf.net/p/vcontrold/code/trunk/vcontrold/"
+  head "http://svn.code.sf.net/p/vcontrold/code/trunk"
 
   depends_on "automake" => :build
   depends_on "autoconf" => :build
   depends_on "libxml2"
 
   def install
-    chmod 0755, "auto-build.sh"
-    system "./auto-build.sh"
+    cd "vcontrold" do
+      chmod 0755, "auto-build.sh"
 
-    system "./configure", "--disable-silent-rules",
-                          "--prefix=#{prefix}"
-
-    system "make", "install"
+      system "./auto-build.sh"
+      system "./configure",
+             "--prefix=#{prefix}",
+             "--with-xml2-include-dir=#{Formula["libxml2"].opt_include}/libxml2"
+      system "make", "install"
+    end
   end
 
   test do

@@ -1,6 +1,9 @@
 # Homebrew Head-Only
 These formulae are unversioned (they have no stable release) so are only available as the latest version from e.g. a version control system.
 
+This tap is deprecated because unversioned formulae provide a terrible UX. You
+can still install formulae from it but we don’t accept new ones.
+
 ## Why is "head-only" bad?
 There are a few problems with head-only software:
 
